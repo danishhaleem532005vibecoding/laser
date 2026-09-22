@@ -1,0 +1,1298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZLaser and Skin Clinic | Laser Hair Removal &amp; Skin Treatments in Sutton</title>
+  <meta name="description" content="ZLaser and Skin Clinic in Sutton offers professional laser hair removal, skin treatments, dark spot removal and papilloma removal. Rated 4.9 stars on Google. Book a consultation today." />
+  <meta name="keywords" content="laser hair removal Sutton, skin clinic Sutton, skin treatments Sutton, dark spot removal Sutton, papilloma removal, ZLaser Skin Clinic" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="ZLaser and Skin Clinic | Sutton, UK" />
+  <meta property="og:description" content="Professional laser hair removal and skin treatments in Sutton. Rated 4.9 on Google." />
+  <meta property="og:image" content="assets/images/clinic-banner.png" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZLaser and Skin Clinic | Sutton, UK" />
+  <meta name="twitter:description" content="Professional laser hair removal and skin treatments in Sutton." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+/* =========================================================
+   ZLaser and Skin Clinic — full stylesheet
+   ========================================================= */
+:root {
+  --gold: #b4893f;
+  --gold-dark: #8f6b2e;
+  --cream: #faf6f0;
+  --cream-2: #f2ebe0;
+  --ink: #1c1a17;
+  --ink-soft: #4a453e;
+  --white: #ffffff;
+  --border: #e7ded0;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(28, 26, 23, 0.08);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Outfit', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 90px 0; }
+@media (max-width: 700px) { .section { padding: 60px 0; } }
+
+.section-header { text-align: center; max-width: 680px; margin: 0 auto 48px; }
+.section-label {
+  display: inline-block; font-family: var(--sans); font-size: 0.8rem; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin-bottom: 12px;
+}
+.section-title { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 600; margin: 0 0 16px; }
+.section-subtitle { color: var(--ink-soft); font-size: 1.02rem; margin: 0; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 28px; border-radius: 999px; font-family: var(--sans); font-weight: 600;
+  font-size: 0.95rem; text-decoration: none; border: 2px solid transparent; cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  min-height: 48px;
+}
+.btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+.btn-gold { background: var(--gold); color: var(--white); }
+.btn-gold:hover { background: var(--gold-dark); box-shadow: var(--shadow); }
+.btn-outline-light { border-color: rgba(255,255,255,.8); color: var(--white); background: transparent; }
+.btn-outline-light:hover { background: rgba(255,255,255,.15); }
+.btn-outline-gold { border-color: var(--gold); color: var(--gold-dark); background: transparent; }
+.btn-outline-gold:hover { background: var(--gold); color: var(--white); }
+.btn-whatsapp { background: #25D366; color: var(--white); }
+.btn-whatsapp:hover { background: #1ebc59; }
+.btn-facebook { background: #1877F2; color: var(--white); }
+.btn-facebook:hover { background: #1466d6; }
+.btn-sm { padding: 10px 20px; font-size: 0.85rem; min-height: 40px; }
+.btn-full { width: 100%; }
+.btn-icon { flex-shrink: 0; }
+.btn-mobile-cta { width: 100%; justify-content: center; margin-top: 8px; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 500; background: rgba(255,255,255,.96);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--border);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; gap: 20px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-img { height: 42px; width: auto; border-radius: 6px; }
+.logo-text { display: none; align-items: baseline; gap: 4px; font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--ink); }
+.logo-z { color: var(--gold); font-size: 1.6rem; }
+.logo-ampersand { color: var(--gold); }
+.nav-desktop ul { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
+.nav-link { text-decoration: none; font-weight: 500; font-size: 0.95rem; color: var(--ink-soft); position: relative; padding: 6px 0; }
+.nav-link:hover, .nav-link.active { color: var(--gold-dark); }
+.nav-link.active::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: var(--gold);
+}
+.header-actions { display: flex; align-items: center; gap: 16px; }
+
+/* Hamburger */
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: 0; padding: 10px; cursor: pointer; z-index: 1001; }
+.hamburger-bar { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
+.hamburger[aria-expanded="true"] .hamburger-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger[aria-expanded="true"] .hamburger-bar:nth-child(2) { opacity: 0; }
+.hamburger[aria-expanded="true"] .hamburger-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile { position: fixed; inset: 0; background: var(--white); z-index: 1000; padding: 100px 28px 40px; overflow-y: auto; }
+.nav-mobile[hidden] { display: none; }
+.nav-mobile ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.nav-mobile .nav-link { display: block; font-size: 1.15rem; padding: 14px 4px; border-bottom: 1px solid var(--border); }
+body.nav-open { overflow: hidden; }
+
+@media (max-width: 900px) {
+  .nav-desktop { display: none; }
+  .hamburger { display: flex; }
+  .header-actions .btn-sm { display: none; }
+}
+
+/* ---------- Hero ---------- */
+.hero-section { position: relative; min-height: 88vh; display: flex; align-items: center; color: var(--white); overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,13,10,.55), rgba(15,13,10,.75)); }
+.hero-content { position: relative; z-index: 2; max-width: 720px; padding-top: 60px; padding-bottom: 60px; }
+.hero-eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; color: var(--gold); font-weight: 600; margin: 0 0 18px; }
+.hero-heading { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 600; line-height: 1.2; margin: 0 0 20px; }
+.hero-heading em { font-style: italic; color: var(--gold); font-weight: 500; }
+.hero-sub { font-size: 1.1rem; opacity: 0.92; max-width: 540px; margin: 0 0 32px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+.hero-trust { display: flex; align-items: center; gap: 12px; }
+.trust-stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; }
+.trust-text { font-size: 0.95rem; opacity: 0.9; }
+
+/* ---------- About ---------- */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
+.about-image-wrap { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.about-img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/5; }
+.about-badge {
+  position: absolute; left: 20px; bottom: 20px; background: var(--white); border-radius: 12px;
+  padding: 14px 18px; box-shadow: var(--shadow); text-align: center;
+}
+.badge-stars { color: var(--gold); font-size: 0.95rem; }
+.badge-rating { font-family: var(--serif); font-weight: 700; font-size: 1.1rem; }
+.badge-sub { font-size: 0.78rem; color: var(--ink-soft); }
+.about-lead { font-size: 1.15rem; color: var(--ink); margin-top: 0; }
+.about-text p { color: var(--ink-soft); }
+
+/* ---------- Treatments ---------- */
+.treatments-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.treatment-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.treatment-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(28,26,23,.12); }
+.treatment-card-img-wrap { aspect-ratio: 4/3; overflow: hidden; background: var(--cream-2); }
+.treatment-card-img { width: 100%; height: 100%; object-fit: cover; }
+.treatment-card-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.treatment-icon { color: var(--gold); font-size: 1.3rem; }
+.treatment-card-title { font-family: var(--serif); font-size: 1.4rem; margin: 0; }
+.treatment-card-desc { color: var(--ink-soft); font-size: 0.95rem; flex: 1; margin: 0; }
+.treatment-enquire-btn { align-self: flex-start; margin-top: 8px; }
+
+/* ---------- Why choose us ---------- */
+.whychoose-section { background: var(--cream); }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px; }
+.feature-card { background: var(--white); border-radius: var(--radius); padding: 28px; text-align: center; box-shadow: var(--shadow); }
+.feature-icon { color: var(--gold); margin-bottom: 14px; display: flex; justify-content: center; }
+.feature-title { font-family: var(--serif); font-size: 1.2rem; margin: 0 0 8px; }
+.feature-desc { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
+
+/* ---------- Gallery ---------- */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; margin-top: 12px; }
+.gallery-item {
+  position: relative; border: 0; padding: 0; background: none; border-radius: 12px; overflow: hidden;
+  aspect-ratio: 4/3; cursor: pointer; box-shadow: var(--shadow);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.gallery-item:hover img, .gallery-item:focus-visible img { transform: scale(1.06); }
+.gallery-item .gallery-caption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 12px; font-size: 0.85rem;
+  color: var(--white); background: linear-gradient(transparent, rgba(0,0,0,.7)); text-align: left;
+}
+.gallery-empty { text-align: center; color: var(--ink-soft); padding: 40px 0; }
+.gallery-empty[hidden] { display: none; }
+
+/* Lightbox */
+.lightbox[hidden], .lightbox-backdrop[hidden] { display: none; }
+.lightbox-backdrop { position: fixed; inset: 0; background: rgba(10,9,7,.9); z-index: 1500; }
+.lightbox { position: fixed; inset: 0; z-index: 1501; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.lightbox-inner { max-width: min(92vw, 900px); max-height: 88vh; text-align: center; }
+.lightbox-img { max-width: 100%; max-height: 76vh; border-radius: 8px; }
+.lightbox-caption { color: var(--white); margin-top: 12px; font-family: var(--serif); font-size: 1.1rem; }
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: fixed; background: rgba(255,255,255,.15); color: var(--white); border: 0; border-radius: 50%;
+  width: 46px; height: 46px; font-size: 1.3rem; cursor: pointer; z-index: 1502;
+  display: flex; align-items: center; justify-content: center; transition: background .2s;
+}
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,.3); }
+.lightbox-close { top: 20px; right: 20px; }
+.lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); }
+.lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); }
+
+/* ---------- Video ---------- */
+.video-section { background: var(--cream); }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 760px; margin: 12px auto 0; }
+.video-native-card {
+  position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #000;
+}
+.video-native { width: 100%; max-height: 520px; display: block; background: #000; }
+.video-card-label {
+  display: block; padding: 12px 16px; color: var(--white); font-weight: 600;
+  background: var(--ink); text-align: left; font-size: 0.95rem;
+}
+.video-note { text-align: center; color: var(--ink-soft); font-size: 0.85rem; margin-top: 24px; }
+
+
+/* Single-media lightbox (used by video cards: hides prev/next arrows) */
+.lightbox.single .lightbox-prev, .lightbox.single .lightbox-next { display: none; }
+
+/* Legal (Privacy/Terms) modals */
+.legal-link-btn { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; text-align: left; color: #b7b1a4; }
+.legal-link-btn:hover { color: var(--gold); }
+.legal-modal-backdrop { position: fixed; inset: 0; background: rgba(10,9,7,.75); z-index: 1600; }
+.legal-modal-backdrop[hidden] { display: none; }
+.legal-modal { position: fixed; inset: 0; z-index: 1601; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.legal-modal[hidden] { display: none; }
+.legal-modal-inner {
+  background: var(--white); max-width: 640px; width: 100%; max-height: 82vh; overflow-y: auto;
+  border-radius: var(--radius); padding: 40px 32px; position: relative; box-shadow: var(--shadow);
+}
+.legal-modal-inner h2 { font-family: var(--serif); font-size: 1.7rem; margin: 0 0 4px; }
+.legal-modal-inner h3 { font-size: 1.02rem; margin: 22px 0 6px; color: var(--ink); }
+.legal-modal-inner p { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.7; margin: 0 0 4px; }
+.legal-updated { font-size: 0.8rem; color: #a39d90; margin-bottom: 18px; }
+.legal-disclaimer { background: var(--cream-2); padding: 12px 14px; border-radius: 8px; font-size: 0.85rem; }
+.legal-modal-close {
+  position: absolute; top: 16px; right: 16px; background: var(--cream-2); border: 0; border-radius: 50%;
+  width: 36px; height: 36px; cursor: pointer; font-size: 1rem; color: var(--ink);
+}
+.legal-modal-close:hover { background: var(--gold); color: var(--white); }
+
+/* ---------- Reviews ---------- */
+.reviews-overall { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 16px; }
+.overall-stars { color: var(--gold); font-size: 1.2rem; }
+.overall-meta { display: flex; flex-direction: column; align-items: flex-start; font-size: 0.85rem; color: var(--ink-soft); }
+.overall-score { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.review-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.review-stars { color: var(--gold); margin-bottom: 12px; }
+.review-text { margin: 0 0 18px; font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
+.review-author { display: flex; align-items: center; gap: 12px; }
+.review-avatar {
+  width: 38px; height: 38px; border-radius: 50%; background: var(--cream-2); color: var(--gold-dark);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;
+}
+.review-name { font-style: normal; font-weight: 600; font-size: 0.92rem; }
+.reviews-cta { text-align: center; margin-top: 40px; }
+.reviews-note { color: var(--ink-soft); margin-bottom: 16px; }
+
+/* ---------- Contact ---------- */
+.contact-section { background: var(--cream); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-info-title { font-family: var(--serif); font-size: 1.5rem; margin: 0 0 20px; }
+.contact-detail { display: flex; gap: 14px; margin-bottom: 20px; }
+.contact-detail-icon { color: var(--gold); flex-shrink: 0; }
+.contact-link { color: var(--gold-dark); text-decoration: none; font-weight: 600; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+.map-wrap { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-top: 12px; }
+.map-wrap iframe { display: block; width: 100%; }
+
+.contact-form-wrap { background: var(--white); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); }
+.contact-form { display: flex; flex-direction: column; gap: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.88rem; font-weight: 600; }
+.required { color: #c0392b; }
+.form-group input, .form-group select, .form-group textarea {
+  padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: var(--sans);
+  font-size: 0.95rem; background: var(--cream); color: var(--ink);
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: 2px solid var(--gold); outline-offset: 1px; background: var(--white);
+}
+.form-group input[aria-invalid="true"] { outline: 2px solid #c0392b; }
+.field-error { color: #c0392b; font-size: 0.8rem; min-height: 1em; }
+.form-disclaimer { font-size: 0.82rem; color: var(--ink-soft); background: var(--cream-2); padding: 12px 14px; border-radius: 8px; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--ink); color: #d8d3c9; padding: 60px 0 24px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 40px; }
+@media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer-logo-link { text-decoration: none; }
+.footer-logo-text { font-family: var(--serif); font-size: 1.4rem; color: var(--white); font-weight: 600; }
+.footer-tagline { font-size: 0.9rem; margin: 12px 0 18px; color: #b7b1a4; }
+.footer-social { display: flex; gap: 12px; }
+.footer-social-link {
+  width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex;
+  align-items: center; justify-content: center; color: var(--white); text-decoration: none; transition: background .2s;
+}
+.footer-social-link:hover { background: var(--gold); }
+.footer-col-title { color: var(--white); font-size: 0.95rem; margin: 0 0 16px; text-transform: uppercase; letter-spacing: 1px; }
+.footer-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.footer-link { color: #b7b1a4; text-decoration: none; font-size: 0.92rem; }
+.footer-link:hover { color: var(--gold); }
+.footer-address { font-style: normal; font-size: 0.92rem; color: #b7b1a4; line-height: 1.7; }
+.placeholder-tag { font-size: 0.72rem; opacity: 0.7; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 20px; }
+.footer-copyright { font-size: 0.82rem; color: #8f897c; margin: 0; text-align: center; }
+
+/* Back to top */
+.back-to-top {
+  position: fixed; right: 22px; bottom: 22px; width: 48px; height: 48px; border-radius: 50%;
+  background: var(--gold); color: var(--white); border: 0; display: flex; align-items: center;
+  justify-content: center; z-index: 900; box-shadow: 0 6px 18px rgba(0,0,0,.25); cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.back-to-top:hover { background: var(--gold-dark); transform: translateY(-3px); }
+.back-to-top[hidden] { display: none; }
+
+/* Image placeholder fallback (paired with onerror on <img>) */
+.img-placeholder { background: var(--cream-2); display: flex; align-items: center; justify-content: center; min-height: 160px; }
+.img-placeholder img { display: none; }
+
+/* Scroll reveal */
+[data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+[data-reveal].revealed { opacity: 1; transform: translateY(0); }
+
+/* Focus visibility for accessibility / tap feedback */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--gold); outline-offset: 2px;
+}
+
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ZLaser and Skin Clinic",
+    "description": "Professional laser hair removal and skin treatment clinic in Sutton, UK.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Throwley Way",
+      "addressLocality": "Sutton",
+      "postalCode": "SM1 4AF",
+      "addressCountry": "GB"
+    },
+    "telephone": "+447723328269",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "52"
+    },
+    "sameAs": ["https://web.facebook.com/p/ZLaser-Skin-Clinic-100094420729650/"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="ZLaser and Skin Clinic Home">
+        <img src="assets/images/logo.jpg" alt="ZLaser and Skin Clinic logo" class="logo-img" id="logo-img"
+             onerror="this.style.display='none';document.getElementById('logo-text').style.display='flex';" />
+        <span class="logo-text" id="logo-text">
+          <span class="logo-z">Z</span>Laser <span class="logo-ampersand">&amp;</span> Skin Clinic
+        </span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#treatments" class="nav-link" data-section="treatments">Treatments</a></li>
+          <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+          <li><a href="#video" class="nav-link" data-section="video">Video</a></li>
+          <li><a href="#reviews" class="nav-link" data-section="reviews">Reviews</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-gold btn-sm" id="header-cta-btn">Book an Appointment</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#treatments" class="nav-link">Treatments</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#video" class="nav-link">Video</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-gold btn-mobile-cta">Book an Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section" id="home" aria-labelledby="hero-heading">
+    <div class="hero-bg" id="hero-bg" style="background-image:url('assets/image1.jpg');"
+         role="img" aria-label="ZLaser and Skin Clinic treatment environment">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-content" data-reveal>
+      <p class="hero-eyebrow">Sutton's Premier Laser &amp; Skin Clinic</p>
+      <h1 id="hero-heading" class="hero-heading">
+        Reveal Your Confidence<br />
+        <em>with Expert Laser &amp; Skin Treatments</em>
+      </h1>
+      <p class="hero-sub">
+        Discover professional laser hair removal and skin treatments in a welcoming clinic environment in Sutton, United Kingdom.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-gold" id="hero-book-btn">Book an Appointment</a>
+        <a href="#treatments" class="btn btn-outline-light" id="hero-explore-btn">Explore Treatments</a>
+      </div>
+      <div class="hero-trust" aria-label="Google rating 4.9 out of 5 based on 52 reviews">
+        <div class="trust-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="trust-text"><strong>4.9</strong> / 5 &nbsp;&bull;&nbsp; 52 Google Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap" data-reveal>
+          <img src="assets/image2.jpg"
+               alt="ZLaser and Skin Clinic location on Throwley Way, Sutton"
+               class="about-img" loading="lazy"
+               onerror="this.closest('.about-image-wrap').classList.add('img-placeholder')" />
+          <div class="about-badge" aria-hidden="true">
+            <div class="badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="badge-rating">4.9 Rated Clinic</div>
+            <div class="badge-sub">52 Google Reviews</div>
+          </div>
+        </div>
+        <div class="about-text" data-reveal>
+          <span class="section-label">About the Clinic</span>
+          <h2 id="about-heading" class="section-title">A Welcoming Space for Your Skin Care Journey</h2>
+          <p class="about-lead">
+            At ZLaser and Skin Clinic, we are dedicated to helping you feel confident and comfortable in your own skin.
+            Based in Sutton, Surrey, our clinic provides a range of professional laser and skin treatments in a clean,
+            friendly, and professional environment.
+          </p>
+          <p>
+            Whether you are exploring laser hair removal for the first time or seeking targeted treatments for specific
+            skin concerns, our team is committed to making every visit a positive, supportive experience. We take the
+            time to explain each treatment, answer your questions, and ensure your comfort throughout.
+          </p>
+          <p>
+            We invite you to get in touch to find out more about our services, or to book a consultation at a time that suits you.
+          </p>
+          <a href="#contact" class="btn btn-gold" id="about-contact-btn">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS -->
+  <section class="section treatments-section" id="treatments" aria-labelledby="treatments-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Our Treatments</span>
+        <h2 id="treatments-heading" class="section-title">Professional Laser &amp; Skin Treatments</h2>
+        <p class="section-subtitle">
+          The treatments listed below are based on available clinic information. Please contact us directly to confirm
+          current services, suitability, and availability before booking.
+        </p>
+      </div>
+      <div class="treatments-grid">
+
+        <article class="treatment-card" data-reveal>
+          <div class="treatment-card-img-wrap">
+            <img src="assets/image3.jpg"
+                 alt="Laser hair removal treatment at ZLaser and Skin Clinic in Sutton"
+                 class="treatment-card-img" loading="lazy"
+                 onerror="this.closest('.treatment-card-img-wrap').classList.add('img-placeholder')" />
+          </div>
+          <div class="treatment-card-body">
+            <div class="treatment-icon" aria-hidden="true">&#10022;</div>
+            <h3 class="treatment-card-title">Laser Hair Removal</h3>
+            <p class="treatment-card-desc">
+              A popular treatment designed to reduce unwanted hair. We work carefully and professionally to ensure
+              your comfort throughout each session.
+            </p>
+            <a href="#contact" class="btn btn-outline-gold treatment-enquire-btn" id="enquire-laser-hair-btn">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="treatment-card" data-reveal>
+          <div class="treatment-card-img-wrap">
+            <img src="assets/image4.jpg"
+                 alt="Professional skin treatment at ZLaser and Skin Clinic Sutton"
+                 class="treatment-card-img" loading="lazy"
+                 onerror="this.closest('.treatment-card-img-wrap').classList.add('img-placeholder')" />
+          </div>
+          <div class="treatment-card-body">
+            <div class="treatment-icon" aria-hidden="true">&#10022;</div>
+            <h3 class="treatment-card-title">Skin Treatments</h3>
+            <p class="treatment-card-desc">
+              We offer a range of professional skin treatments tailored to individual needs. Contact us to discuss
+              which treatment may be right for you.
+            </p>
+            <a href="#contact" class="btn btn-outline-gold treatment-enquire-btn" id="enquire-skin-btn">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="treatment-card" data-reveal>
+          <div class="treatment-card-img-wrap">
+            <img src="assets/image5.jpg"
+                 alt="Dark spot removal treatment at ZLaser and Skin Clinic in Sutton"
+                 class="treatment-card-img" loading="lazy"
+                 onerror="this.closest('.treatment-card-img-wrap').classList.add('img-placeholder')" />
+          </div>
+          <div class="treatment-card-body">
+            <div class="treatment-icon" aria-hidden="true">&#10022;</div>
+            <h3 class="treatment-card-title">Dark Spot Removal</h3>
+            <p class="treatment-card-desc">
+              Targeted treatment for dark spots and pigmentation concerns. Every client is assessed individually.
+              Please get in touch to discuss your specific situation.
+            </p>
+            <a href="#contact" class="btn btn-outline-gold treatment-enquire-btn" id="enquire-dark-spot-btn">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="treatment-card" data-reveal>
+          <div class="treatment-card-img-wrap">
+            <img src="assets/image6.jpg"
+                 alt="Papilloma removal treatment at ZLaser and Skin Clinic in Sutton"
+                 class="treatment-card-img" loading="lazy"
+                 onerror="this.closest('.treatment-card-img-wrap').classList.add('img-placeholder')" />
+          </div>
+          <div class="treatment-card-body">
+            <div class="treatment-icon" aria-hidden="true">&#10022;</div>
+            <h3 class="treatment-card-title">Papilloma Removal</h3>
+            <p class="treatment-card-desc">
+              Professional treatment for the removal of papillomas, carried out with care and attention to hygiene
+              and client comfort at every stage.
+            </p>
+            <a href="#contact" class="btn btn-outline-gold treatment-enquire-btn" id="enquire-papilloma-btn">Enquire Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section whychoose-section" id="why-choose-us" aria-labelledby="whychoose-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Why Choose Us</span>
+        <h2 id="whychoose-heading" class="section-title">What Our Clients Say About Their Experience</h2>
+        <p class="section-subtitle">The following themes are drawn from genuine client feedback. Individual experiences may vary.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3C9.373 3 4 8.373 4 15s5.373 12 12 12 12-5.373 12-12S22.627 3 16 3zm-1 17l-5-5 1.414-1.414L15 17.172l7.586-7.586L24 11l-9 9z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Welcoming Service</h3>
+          <p class="feature-desc">Clients consistently describe a warm, friendly atmosphere from the moment they arrive, helping them feel at ease throughout their visit.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2a14 14 0 100 28A14 14 0 0016 2zm1 21h-2v-8h2v8zm0-10h-2v-2h2v2z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Professional Approach</h3>
+          <p class="feature-desc">Clients highlight a professional, responsible, and dedicated manner, carried out to high standards with modern techniques.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a4 4 0 110 8 4 4 0 010-8zm0 18a10 10 0 01-8-4c.02-2.646 5.334-4.1 8-4.1 2.656 0 7.98 1.454 8 4.1a10 10 0 01-8 4z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Clear Explanations</h3>
+          <p class="feature-desc">Reviewers appreciate clear, step-by-step explanations of each treatment and guidance on what to expect afterwards.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M26 8h-4V6a2 2 0 00-2-2h-8a2 2 0 00-2 2v2H6a2 2 0 00-2 2v16a2 2 0 002 2h20a2 2 0 002-2V10a2 2 0 00-2-2zm-14-2h8v2h-8V6zm14 20H6V10h20v16z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Client Comfort &amp; Care</h3>
+          <p class="feature-desc">Clients report feeling listened to and cared for, with attention paid to minimising discomfort and following up after treatment.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm7 16H15V9h2v7h6v2z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Clean &amp; Hygienic Environment</h3>
+          <p class="feature-desc">A spotless, hygienic environment is a consistent theme in client feedback, giving visitors confidence in their treatment.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M28 8l-12 12-6-6-2 2 8 8 14-14-2-2z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Attentive Follow-Up</h3>
+          <p class="feature-desc">Some clients note that the clinic checked in with them after their treatment, reflecting a commitment to ongoing client wellbeing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Our Gallery</span>
+        <h2 id="gallery-heading" class="section-title">A Glimpse Inside the Clinic</h2>
+        <p class="section-subtitle">Images are illustrative of the clinic environment and treatment style.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Clinic gallery"
+           data-gallery='[{"src": "assets/image7.jpg", "alt": "Carbon laser facial treatment", "caption": "Carbon Laser Facial"}, {"src": "assets/image8.jpg", "alt": "Skin care and treatment results", "caption": "Healthier, Clearer Skin"}, {"src": "assets/image9.jpg", "alt": "Close-up of a laser treatment session", "caption": "Laser Treatment Session"}, {"src": "assets/image10.jpg", "alt": "ZLaser and Skin Clinic street location in Sutton", "caption": "Our Location in Sutton"}]'></div>
+      <div class="gallery-empty" id="gallery-empty" hidden>
+        <p>Gallery images will appear here once added to <code>assets/images/gallery/</code>. See the README for instructions.</p>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close lightbox">&#x2715;</button>
+      <button class="lightbox-prev" id="lightbox-prev-btn" aria-label="Previous image">&#8249;</button>
+      <button class="lightbox-next" id="lightbox-next-btn" aria-label="Next image">&#8250;</button>
+      <div class="lightbox-inner">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+    <div class="lightbox-backdrop" id="lightbox-backdrop" hidden aria-hidden="true"></div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section video-section" id="video" aria-labelledby="video-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">See It In Action</span>
+        <h2 id="video-heading" class="section-title">How Our Treatments Work</h2>
+        <p class="section-subtitle">A look inside real treatment sessions at the clinic.</p>
+      </div>
+      <div class="video-grid" data-reveal>
+        <div class="video-native-card">
+          <video class="video-native" controls playsinline preload="metadata" muted>
+            <source src="assets/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <span class="video-card-label">HydraFacial Treatment</span>
+        </div>
+        <div class="video-native-card">
+          <video class="video-native" controls playsinline preload="metadata" muted>
+            <source src="assets/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <span class="video-card-label">Laser &amp; Skin Treatment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews-section" id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Client Reviews</span>
+        <h2 id="reviews-heading" class="section-title">What Our Clients Are Saying</h2>
+        <div class="reviews-overall" aria-label="Overall rating 4.9 out of 5 based on 52 Google reviews">
+          <div class="overall-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="overall-meta">
+            <strong class="overall-score">4.9</strong>
+            <span class="overall-count">Based on 52 Google Reviews</span>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card" data-reveal aria-label="Review by Mariana Dobreva">
+          <div class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-text">
+            "Excellent service in a very clean salon. The staff were professional, welcoming, and made me feel comfortable from the moment I arrived. The salon was spotless and hygienic, which gave me great confidence in the treatment. The procedure was handled carefully and efficiently, with clear explanations throughout and minimal discomfort. I'm very happy with the results and would definitely recommend this salon to anyone looking for safe, reliable papilloma removal or laser services."
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">MD</div>
+            <cite class="review-name">Mariana Dobreva</cite>
+          </footer>
+        </article>
+        <article class="review-card" data-reveal aria-label="Review by Daniela Logigan">
+          <div class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-text">
+            "I recently visited a Zlaser and Skin Clinic for the removal of dark spots. Zornitsa was very professional, she explained each step of the treatment and what to expect afterwards. She also checked up on me after a few weeks from treatment. I would definitely return to Zlaser and Skin Clinic."
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">DL</div>
+            <cite class="review-name">Daniela Logigan</cite>
+          </footer>
+        </article>
+        <article class="review-card" data-reveal aria-label="Review by Rostsa Sarievs">
+          <div class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-text">
+            "An outstanding professional - responsible, reliable, dedicated, and incredibly kind. She works to the highest standards using modern equipment and techniques. I highly recommend her services without hesitation."
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">RS</div>
+            <cite class="review-name">Rostsa Sarievs</cite>
+          </footer>
+        </article>
+      </div>
+      <div class="reviews-cta" data-reveal>
+        <p class="reviews-note">Reviews displayed are a selection provided for this website. To read all reviews, visit the Facebook page.</p>
+        <a href="https://web.facebook.com/p/ZLaser-Skin-Clinic-100094420729650/" target="_blank" rel="noopener noreferrer"
+           class="btn btn-gold" id="fb-reviews-btn">See All Reviews on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Book an Appointment</span>
+        <h2 id="contact-heading" class="section-title">Get in Touch with ZLaser &amp; Skin Clinic</h2>
+        <p class="section-subtitle">
+          Use the form below to send an enquiry. This is a <strong>demo enquiry form</strong> &mdash; submitting will open
+          WhatsApp with your details pre-filled. No booking is confirmed until the clinic contacts you directly.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <h3 class="contact-info-title">Clinic Details</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong><br />
+              7 Throwley Way,<br />Sutton SM1 4AF,<br />United Kingdom
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong><br />
+              <a href="tel:+447723328269" class="contact-link" id="phone-link">+44 7723 328269</a>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:+447723328269" class="btn btn-gold" id="call-now-btn">Call Now</a>
+            <a href="https://wa.me/447723328269" target="_blank" rel="noopener noreferrer"
+               class="btn btn-whatsapp" id="whatsapp-btn" aria-label="WhatsApp enquiry">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.854L.057 23.938a.5.5 0 00.604.604l6.084-1.475A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.96 0-3.786-.538-5.343-1.469l-.383-.228-3.965.96.976-3.886-.249-.399A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              WhatsApp Enquiry
+            </a>
+            <a href="https://web.facebook.com/p/ZLaser-Skin-Clinic-100094420729650/"
+               target="_blank" rel="noopener noreferrer" class="btn btn-facebook" id="facebook-btn" aria-label="Facebook page">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+          </div>
+          <div class="map-wrap">
+            <iframe title="ZLaser and Skin Clinic on Google Maps"
+              src="https://www.google.com/maps?q=7+Throwley+Way,+Sutton+SM1+4AF,+UK&output=embed"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" id="contact-form" novalidate aria-label="Appointment enquiry form">
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="full-name" name="fullName" autocomplete="name" required placeholder="Your full name" aria-required="true" />
+              <span class="field-error" id="full-name-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+44 7123 456789" aria-required="true" />
+              <span class="field-error" id="phone-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com" aria-required="true" />
+              <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="treatment">Interested Treatment</label>
+              <select id="treatment" name="treatment">
+                <option value="">Select a treatment (optional)</option>
+                <option value="Laser Hair Removal">Laser Hair Removal</option>
+                <option value="Skin Treatments">Skin Treatments</option>
+                <option value="Dark Spot Removal">Dark Spot Removal</option>
+                <option value="Papilloma Removal">Papilloma Removal</option>
+                <option value="Other / Not Sure">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="preferredDate" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your enquiry or any questions you have..."></textarea>
+            </div>
+            <p class="form-disclaimer">
+              <strong>Note:</strong> Submitting this form will open WhatsApp with your enquiry pre-filled.
+              No booking is confirmed until the clinic responds directly. Form data is not stored on any server.
+            </p>
+            <button type="submit" class="btn btn-gold btn-full" id="form-submit-btn">Send Enquiry via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo-link" aria-label="Back to top">
+            <span class="footer-logo-text"><span class="logo-z">Z</span>Laser &amp; Skin Clinic</span>
+          </a>
+          <p class="footer-tagline">Professional laser hair removal and skin treatments in Sutton, United Kingdom.</p>
+          <div class="footer-social">
+            <a href="https://web.facebook.com/p/ZLaser-Skin-Clinic-100094420729650/" target="_blank" rel="noopener noreferrer"
+               class="footer-social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/447723328269" target="_blank" rel="noopener noreferrer"
+               class="footer-social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.854L.057 23.938a.5.5 0 00.604.604l6.084-1.475A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.96 0-3.786-.538-5.343-1.469l-.383-.228-3.965.96.976-3.886-.249-.399A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav" role="list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#treatments" class="footer-link">Treatments</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#video" class="footer-link">Video</a></li>
+            <li><a href="#reviews" class="footer-link">Reviews</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <address class="footer-address">
+            7 Throwley Way,<br />
+            Sutton SM1 4AF,<br />
+            United Kingdom<br /><br />
+            <a href="tel:+447723328269" class="footer-link">+44 7723 328269</a>
+          </address>
+        </div>
+        <div class="footer-legal-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-nav" role="list">
+            <li>
+              <button type="button" class="footer-link legal-link-btn" id="privacy-link" data-modal="privacy-modal">
+                Privacy Policy
+              </button>
+            </li>
+            <li>
+              <button type="button" class="footer-link legal-link-btn" id="terms-link" data-modal="terms-modal">
+                Terms &amp; Conditions
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="footer-year"></span> ZLaser and Skin Clinic. All rights reserved.
+          7 Throwley Way, Sutton SM1 4AF, United Kingdom.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEGAL MODALS -->
+  <div class="legal-modal-backdrop" id="legal-modal-backdrop" hidden></div>
+
+  <div class="legal-modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title" hidden>
+    <div class="legal-modal-inner">
+      <button type="button" class="legal-modal-close" data-close-modal aria-label="Close">&#x2715;</button>
+      <h2 id="privacy-modal-title">Privacy Policy</h2>
+      <p class="legal-updated">Last updated: September 2026</p>
+      <p class="legal-disclaimer"><strong>Note:</strong> This policy is provided as a general guide for clients and is not a substitute for independent legal advice. ZLaser and Skin Clinic recommends this text is reviewed by a qualified solicitor before being relied upon as a final compliance document.</p>
+
+      <h3>1. Who we are</h3>
+      <p>ZLaser and Skin Clinic ("we", "us", "our"), of 7 Throwley Way, Sutton, SM1 4AF, United Kingdom, is the data controller for the personal information described in this policy. We are based in, and operate under the laws of, the United Kingdom.</p>
+
+      <h3>2. What information we collect</h3>
+      <p>When you use our enquiry form, contact us by phone, WhatsApp, or Facebook, or visit the clinic, we may collect: your name, phone number, email address, the treatment you're interested in, your preferred appointment date, and any message or health information you choose to share with us.</p>
+
+      <h3>3. How we use your information</h3>
+      <p>We use this information to respond to your enquiry, arrange consultations and appointments, provide safe treatment (including assessing suitability), and keep records as required by our professional and insurance obligations. Our lawful bases for processing are your consent, the steps needed to enter into or perform a contract with you, and our legitimate interest in running the clinic safely and responsibly.</p>
+
+      <h3>4. How your enquiry is sent</h3>
+      <p>Our website's enquiry form does not store your details on our server. Submitting the form opens WhatsApp with your details pre-filled, so that message is sent and stored via WhatsApp (operated by WhatsApp Ireland Limited, part of Meta). Please review <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">WhatsApp's own privacy policy</a> for how they handle your data.</p>
+
+      <h3>5. Other third parties</h3>
+      <p>Our location map is provided by Google Maps, and our reviews and social page are hosted on Facebook. If you interact with these embedded services, the relevant company's own privacy policy applies to that interaction (Google's privacy policy and Meta/Facebook's privacy policy).</p>
+
+      <h3>6. How long we keep your information</h3>
+      <p>We retain client and enquiry records for as long as reasonably necessary to provide our services, meet legal, tax, and insurance requirements, and handle any queries or complaints, after which it is securely deleted or anonymised.</p>
+
+      <h3>7. Your rights</h3>
+      <p>Under the UK GDPR and the Data Protection Act 2018, you have the right to: access the personal data we hold about you; request correction of inaccurate data; request erasure of your data; restrict or object to certain processing; and request that your data be provided in a portable format. To exercise any of these rights, contact us using the details below.</p>
+
+      <h3>8. Complaints</h3>
+      <p>If you're unhappy with how we've handled your personal data, we'd like the chance to put it right &mdash; please contact us first. You also have the right to complain to the UK's supervisory authority, the Information Commissioner's Office (ICO), at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a> or by calling 0303 123 1113.</p>
+
+      <h3>9. Children's privacy</h3>
+      <p>Our website is not directed at children, and we do not knowingly collect personal data from anyone under 16 without appropriate parental or guardian involvement.</p>
+
+      <h3>10. Changes to this policy</h3>
+      <p>We may update this policy from time to time. The date at the top shows when it was last revised.</p>
+
+      <h3>11. Contact us</h3>
+      <p>ZLaser and Skin Clinic, 7 Throwley Way, Sutton, SM1 4AF, United Kingdom.<br />
+      Phone: <a href="tel:+447723328269">+44 7723 328269</a></p>
+    </div>
+  </div>
+
+  <div class="legal-modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title" hidden>
+    <div class="legal-modal-inner">
+      <button type="button" class="legal-modal-close" data-close-modal aria-label="Close">&#x2715;</button>
+      <h2 id="terms-modal-title">Terms &amp; Conditions</h2>
+      <p class="legal-updated">Last updated: September 2026</p>
+      <p class="legal-disclaimer"><strong>Note:</strong> This is a general template intended to give clients a clear overview of our terms and is not a substitute for independent legal advice. We recommend this text is reviewed and tailored by a qualified solicitor, particularly around treatment-specific consent and cancellation policy, before final publication.</p>
+
+      <h3>1. About these terms</h3>
+      <p>These terms apply to your use of this website and to treatments booked with ZLaser and Skin Clinic, 7 Throwley Way, Sutton, SM1 4AF, United Kingdom. By contacting us to book a consultation or treatment, you agree to these terms.</p>
+
+      <h3>2. This website is informational, not a confirmed booking</h3>
+      <p>Submitting the enquiry form or messaging us on WhatsApp sends an enquiry only. No appointment is confirmed until we've contacted you directly to arrange a time and confirm your suitability for treatment.</p>
+
+      <h3>3. Consultation and suitability</h3>
+      <p>Certain treatments require an initial consultation and, where appropriate, a patch test before your first session. You must disclose relevant medical history, medication, allergies, pregnancy, or skin conditions accurately, as these can affect whether a treatment is suitable or safe for you. We reserve the right to decline or postpone treatment on medical or safety grounds.</p>
+
+      <h3>4. Age requirements</h3>
+      <p>Clients must normally be at least 18 years old to receive treatment. Where a treatment policy permits clients aged 16&ndash;17 to be treated, this requires prior written parental or guardian consent and, where appropriate, their attendance at the consultation.</p>
+
+      <h3>5. Results and no medical advice</h3>
+      <p>Treatment outcomes vary between individuals and we cannot guarantee specific results. Nothing on this website constitutes medical advice; if you have a medical concern, please consult your GP or another qualified medical professional.</p>
+
+      <h3>6. Bookings, cancellations and no-shows</h3>
+      <p>We ask that you give us as much notice as possible if you need to cancel or reschedule &mdash; at least 24 hours' notice where possible. Repeated late cancellations or missed appointments may result in a request for a deposit before future bookings, at our discretion.</p>
+
+      <h3>7. Pricing</h3>
+      <p>Prices for treatments are confirmed at the time of your consultation or booking and may change from those advertised elsewhere. Please confirm current pricing with us directly before booking.</p>
+
+      <h3>8. Your right to cancel a distance booking</h3>
+      <p>If you book a treatment through this website or over WhatsApp/phone without attending in person first, the Consumer Contracts Regulations 2013 may give you a statutory right to cancel within 14 days. Please note that once a treatment has been carried out with your consent, this cancellation right may no longer apply to the service already provided. We'll explain your specific cancellation rights when you book.</p>
+
+      <h3>9. Photography and consent</h3>
+      <p>We will only take and use before/after photographs of you with your explicit, separate consent, and you may withdraw that consent for future use at any time.</p>
+
+      <h3>10. Liability</h3>
+      <p>Nothing in these terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraud, or any other liability that cannot be excluded or limited under English law. Subject to that, our liability is limited to the extent permitted by the Consumer Rights Act 2015 and other applicable UK consumer law.</p>
+
+      <h3>11. Website content</h3>
+      <p>All content on this website, including text, images, and branding, belongs to ZLaser and Skin Clinic or its licensors and may not be copied or reused without permission.</p>
+
+      <h3>12. Governing law</h3>
+      <p>These terms are governed by the laws of England and Wales, and any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+      <h3>13. Contact us</h3>
+      <p>ZLaser and Skin Clinic, 7 Throwley Way, Sutton, SM1 4AF, United Kingdom.<br />
+      Phone: <a href="tel:+447723328269">+44 7723 328269</a></p>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5l-8-8z" fill="currentColor"/></svg>
+  </button>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Mobile hamburger menu ---------- */
+  var hamburgerBtn = document.getElementById('hamburger-btn');
+  var mobileNav = document.getElementById('mobile-nav');
+
+  function openMobileNav() {
+    mobileNav.hidden = false;
+    hamburgerBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
+  function closeMobileNav() {
+    mobileNav.hidden = true;
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+  if (hamburgerBtn && mobileNav) {
+    hamburgerBtn.addEventListener('click', function () {
+      var isOpen = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+      isOpen ? closeMobileNav() : openMobileNav();
+    });
+    // Close mobile nav when any link inside it is tapped
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMobileNav);
+    });
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !mobileNav.hidden) closeMobileNav();
+    });
+  }
+
+  /* ---------- Smooth scroll with header offset for all in-page links ---------- */
+  var header = document.getElementById('site-header');
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = link.getAttribute('href');
+      if (id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var headerH = header ? header.offsetHeight : 0;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 10;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+      history.pushState(null, '', id);
+    });
+  });
+
+  /* ---------- Active nav link highlighting ---------- */
+  var navLinks = document.querySelectorAll('.nav-link[data-section]');
+  var sections = Array.prototype.map.call(navLinks, function (l) {
+    return document.getElementById(l.getAttribute('data-section'));
+  }).filter(Boolean);
+
+  if (sections.length && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (l) { l.classList.remove('active'); });
+          var match = document.querySelector('.nav-link[data-section="' + entry.target.id + '"]');
+          if (match) match.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+
+  /* ---------- Back to top button ---------- */
+  var backToTopBtn = document.getElementById('back-to-top-btn');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', function () {
+      backToTopBtn.hidden = window.scrollY < 400;
+    });
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---------- Gallery + Lightbox ---------- */
+  var galleryGrid = document.getElementById('gallery-grid');
+  var galleryEmpty = document.getElementById('gallery-empty');
+  var images = [];
+
+  if (galleryGrid) {
+    try {
+      images = JSON.parse(galleryGrid.getAttribute('data-gallery') || '[]');
+    } catch (err) {
+      images = [];
+    }
+
+    // Remove accidental duplicate entries (same src used twice)
+    var seen = {};
+    images = images.filter(function (img) {
+      if (seen[img.src]) return false;
+      seen[img.src] = true;
+      return true;
+    });
+
+    if (!images.length) {
+      if (galleryEmpty) galleryEmpty.hidden = false;
+    } else {
+      images.forEach(function (img, index) {
+        var item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'gallery-item';
+        item.setAttribute('role', 'listitem');
+        item.setAttribute('aria-label', 'Open image: ' + (img.caption || img.alt || 'Gallery image'));
+        item.dataset.index = index;
+
+        var imageEl = document.createElement('img');
+        imageEl.src = img.src;
+        imageEl.alt = img.alt || img.caption || '';
+        imageEl.loading = 'lazy';
+        // If an image file doesn't exist yet, quietly remove that tile
+        // instead of showing a broken image icon.
+        imageEl.onerror = function () {
+          item.remove();
+          images = images.filter(function (_, i) { return i !== index; });
+          if (!galleryGrid.querySelector('.gallery-item') && galleryEmpty) {
+            galleryEmpty.hidden = false;
+          }
+        };
+        item.appendChild(imageEl);
+
+        if (img.caption) {
+          var cap = document.createElement('span');
+          cap.className = 'gallery-caption';
+          cap.textContent = img.caption;
+          item.appendChild(cap);
+        }
+
+        item.addEventListener('click', function () {
+          openLightbox(index);
+        });
+
+        galleryGrid.appendChild(item);
+      });
+    }
+  }
+
+  var lightbox = document.getElementById('lightbox');
+  var lightboxBackdrop = document.getElementById('lightbox-backdrop');
+  var lightboxImg = document.getElementById('lightbox-img');
+  var lightboxCaption = document.getElementById('lightbox-caption');
+  var lightboxClose = document.getElementById('lightbox-close-btn');
+  var lightboxPrev = document.getElementById('lightbox-prev-btn');
+  var lightboxNext = document.getElementById('lightbox-next-btn');
+  var currentIndex = 0;
+  var lastFocusedEl = null;
+
+  function openLightbox(index) {
+    if (!images.length) return;
+    currentIndex = index;
+    lastFocusedEl = document.activeElement;
+    showLightboxImage();
+    lightbox.hidden = false;
+    lightboxBackdrop.hidden = false;
+    lightboxClose.focus();
+  }
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxBackdrop.hidden = true;
+    lightbox.classList.remove('single');
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
+  function openSingleLightbox(src, alt, caption) {
+    lastFocusedEl = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightboxCaption.textContent = caption || '';
+    lightbox.classList.add('single');
+    lightbox.hidden = false;
+    lightboxBackdrop.hidden = false;
+    lightboxClose.focus();
+  }
+  function showLightboxImage() {
+    var img = images[currentIndex];
+    if (!img) return;
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt || '';
+    lightboxCaption.textContent = img.caption || '';
+  }
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showLightboxImage();
+  }
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showLightboxImage();
+  }
+
+  if (lightbox) {
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxBackdrop.addEventListener('click', closeLightbox);
+    lightboxNext.addEventListener('click', showNext);
+    lightboxPrev.addEventListener('click', showPrev);
+    document.addEventListener('keydown', function (e) {
+      if (lightbox.hidden) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') showNext();
+      if (e.key === 'ArrowLeft') showPrev();
+    });
+  }
+
+  /* ---------- Legal modals (Privacy / Terms) ---------- */
+  var legalBackdrop = document.getElementById('legal-modal-backdrop');
+  var legalLastFocused = null;
+
+  function openLegalModal(id) {
+    var modal = document.getElementById(id);
+    if (!modal) return;
+    legalLastFocused = document.activeElement;
+    modal.hidden = false;
+    legalBackdrop.hidden = false;
+    document.body.classList.add('nav-open');
+    var closeBtn = modal.querySelector('[data-close-modal]');
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeLegalModals() {
+    document.querySelectorAll('.legal-modal').forEach(function (m) { m.hidden = true; });
+    legalBackdrop.hidden = true;
+    document.body.classList.remove('nav-open');
+    if (legalLastFocused) legalLastFocused.focus();
+  }
+  document.querySelectorAll('[data-modal]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openLegalModal(btn.dataset.modal);
+    });
+  });
+  document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+    btn.addEventListener('click', closeLegalModals);
+  });
+  if (legalBackdrop) legalBackdrop.addEventListener('click', closeLegalModals);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLegalModals();
+  });
+
+  /* ---------- Contact form -> WhatsApp ---------- */
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var fields = {
+        fullName: document.getElementById('full-name'),
+        phone: document.getElementById('phone'),
+        email: document.getElementById('email')
+      };
+      var valid = true;
+
+      Object.keys(fields).forEach(function (key) {
+        var input = fields[key];
+        var errorEl = document.getElementById(input.id + '-error');
+        if (!input.value.trim()) {
+          valid = false;
+          if (errorEl) errorEl.textContent = 'This field is required.';
+          input.setAttribute('aria-invalid', 'true');
+        } else {
+          if (errorEl) errorEl.textContent = '';
+          input.removeAttribute('aria-invalid');
+        }
+      });
+
+      if (!valid) return;
+
+      var treatment = document.getElementById('treatment').value;
+      var date = document.getElementById('preferred-date').value;
+      var message = document.getElementById('message').value;
+
+      var text = 'Hello ZLaser and Skin Clinic, I would like to enquire about an appointment.%0A%0A' +
+        'Name: ' + encodeURIComponent(fields.fullName.value) + '%0A' +
+        'Phone: ' + encodeURIComponent(fields.phone.value) + '%0A' +
+        'Email: ' + encodeURIComponent(fields.email.value) +
+        (treatment ? '%0ATreatment: ' + encodeURIComponent(treatment) : '') +
+        (date ? '%0APreferred Date: ' + encodeURIComponent(date) : '') +
+        (message ? '%0AMessage: ' + encodeURIComponent(message) : '');
+
+      window.open('https://wa.me/447723328269?text=' + text, '_blank', 'noopener');
+    });
+  }
+
+  /* ---------- Scroll reveal for [data-reveal] elements ---------- */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('revealed'); });
+  }
+
+});
+
+  </script>
+</body>
+</html>
